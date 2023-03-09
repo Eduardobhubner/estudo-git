@@ -1,69 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Aprendendo a usar git</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <h1>Aprendendo a usar o Git e Github!!!</h1>
-    <h2>Curso feito pela plataforma da Alura</h2>
-    <span>Lembrando que o foco desse estudo não é se aprofundar em nenhuma linguagem!</span>
+<head>
+  <title>Aprendendo a usar git</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <h2>conteudo para teste</h2>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-    <ul>
-        <li>Curso Online Vagrant: Gerenciando máquinas virtuais</li>
-        <li>Docker</li>
-        <li>Ansible</li>
-        <li>Integração Continua</li>
-        <li>Vue.js</li>
-    </ul>
+<body>
 
-    <h3>Informações iniciais sobre o git </h3>
+  <h1>Fazendo a edição deste HTML usando o vscode da web atraves do github</h1>
 
-    
-    <p>Para se iniciar um reposotório no git, basta entrar na pasta desejada e digitar "git init". Um repositório é muito importante quando você quer determinar quais mudanças ocorreram no meio do caminho, quem alterou, quais foram todas as alterações, etc</p>
 
-    <p>Para saber o status do seu repositório git, digite a função "git status"</p>
+</body>
 
-    <p>Sempre que baixar o git em seu device, temq ue configurar de quem é o repositório, para configurar basta " (git config --local user.name "...") e (git config --local user.email "...@gmail.com"</p>
-
-    <p>Sempre que quiser criar um commit, para poder gerar um "ponto" na linha de desenvolvimento de seu projéto, deve antes adicionar o arquivo que deseja que seja monitorado pelo repositório com o comando "git add 'name-file' e depois para criar o commit digitar "git commit -m'paragrafo para descrever as alterações' "</p>
-
-    <p>Para poder começar a trabalhar em equipe ou sozinho em máquinas diferentes, podemos tanto criar um servidor local como servidores remotos, para criar um servidor local, deve-se criar uma pasta, por exemplo: "servidor", e nele inicializar um repositório já mencionado acima, mas quando se trata de um servidor onde apenas vai ter a função de armazenar os arquivos, o git já fornece uma função especifica para isso( git init --bare )</p>
-
-    <p>Para criar servidores remotos, precisamos criar um repositório em versionadores de código git, como por exemplo o github, um dos mais famosos atualmente 24/05/2021, após a conta criada, devemos criar um repositório e puxar seu https para direcionar ao git em seu device aonde você deseja criar seu "servidor", para isso devemos usar a função (git remote add origin "url")</p>
-
-    <p>Mas vale lembrar que direcionar o acesso remoto não é necessariamente já colocar ou puxar arquivos de seu servidor, para enviar os commits deve usar a função ( git push master origin ) e para puxar a ultima versão do código ( git pull origin master</p>
-
-    <p>Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. A branch master é a branch "padrão" quando você cria um repositório.
-      É interessante separar o desenvolvimento de funcionalidades em branches diferentes, para que as mudanças no código para uma não influencie no funcionamento de outra.</p>
-
-    <p>Alternativa correta! Com o git checkout nós desfazemos uma alteração que ainda não foi adicionada ao index ou stage, ou seja, antes do git add. Depois de adicionar com git add, para desfazer uma alteração, precisamos tirá-la deste estado, com git reset. Agora, se já realizamos o commit, o comando git revert pode nos salvar. Para saber quais processos precisa terminar, podemos utilizar (git stash list)</p>
-
-    <p>Quando Estamos desenvolvendo nem sempre da tempo para finalizar e criar um commit, as vezes temos que parar no meio para fazer outras coisas de maior importancia, porem para não perder o processo daquilo  que já se desenvolveu podemos usar a função do git chamado  (git stash)</p>
-
-    <p>Com o comando git diff, é possível visualizarmos as mudanças realizadas em determinado código. Podemos ver as diferenças entre commits, branches, etc.</p>
-
-    <p>Que é possível visualizar quais alterações foram realizadas em cada arquivo, com o comando git diff;
-      Que, digitando apenas git diff, vemos as alterações em nossos arquivos que não foram adicionadas para commit (com git add);
-      Que é possível comparar as alterações entre duas branches com git diff "branch1..branch2
-      Que é possível comparar as alterações feitas entre um commit e outro, através do comando git diff commit1..commit2;
-      Que o Git nos possibilita salvar marcos da nossa aplicação, como por exemplo, lançamento de versões, através do git tag;
-      Que o comando git tag -a é utilizado para gerar uma nova tag;
-      As Releases do GitHub, que são geradas para cada tag do Git criada em nosso repositório</p>
-      
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>
